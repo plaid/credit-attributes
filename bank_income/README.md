@@ -5,7 +5,7 @@ The [Plaid Bank Income](https://plaid.com/products/income/) product helps verify
 Please reach out to your account manager if you have further questions on how to utilize the attributes.
 
 ### Monthly Average Income(Net and Gross)
-These attributes details how to estimate a user’s average monthly net income across all of their income sources and how to estimate the monthly gross income for that user from their net income. You can configure what time period you want to average over and what categories to include in the calculation.
+These attributes details how to estimate a user’s average monthly net and gross income across all of their income sources. You can configure what time period you want to average over and what categories to include in the calculation.
 
 These attributes can be found in monthly_average.py
 
