@@ -30,7 +30,7 @@ def next_expected_pay_date(source: CreditBankIncomeSource) -> Optional[date]:
     frequency = str(source.pay_frequency)
     days_since_pay = date.today() - source.end_date
 
-    if days_since_pay.days < EXPECTED_CADENCE[frequency]:
+    if days_since_pay.days <= EXPECTED_CADENCE[frequency]:
         # If it hasn't been the expected amount of days since the last
         # pay date, simply add the expected amount of days for the frequency
         return source.end_date + timedelta(EXPECTED_CADENCE[frequency])
@@ -38,7 +38,7 @@ def next_expected_pay_date(source: CreditBankIncomeSource) -> Optional[date]:
         # If the expected number of days has already passed, but within the buffer/error
         # window for the frequency, return tommorrow's date
         return date.today() + 1
-    elif days_since_pay.days < EXPECTED_CADENCE[frequency] * 2:
+    elif days_since_pay.days <= EXPECTED_CADENCE[frequency] * 2:
         # Otherwise assume that the subsequent pay date has been missed and return
         # the one after that
         return source.end_date + timedelta(EXPECTED_CADENCE[frequency] * 2)
