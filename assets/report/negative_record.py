@@ -74,7 +74,11 @@ across the users accounts
 
 
 def count_od_nsf(asset_report: AssetReport) -> int:
-    return len(filter_report_transactions_by_category(asset_report, "BANK_PENALTIES", include_depository_only=True))
+    return len(
+        filter_report_transactions_by_category(
+            asset_report, "BANK_PENALTIES", include_depository_only=True
+        )
+    )
 
 
 """
