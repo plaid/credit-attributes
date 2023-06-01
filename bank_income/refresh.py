@@ -76,9 +76,8 @@ def get_streams_with_new_transactions(
 def is_source_inactive(
     source: CreditBankIncomeSource, report_generation_time: datetime.datetime
 ) -> bool:
-    source_end_date = datetime.datetime.strptime(source.end_date, "%Y-%m-%d")
     pay_frequency = str(source.pay_frequency)
-    time_since_last_transaction = report_generation_time - source_end_date
+    time_since_last_transaction = report_generation_time.date() - source.end_date
     if pay_frequency == "WEEKLY":
         if time_since_last_transaction > datetime.timedelta(days=14):
             return True
@@ -113,14 +112,14 @@ def get_inactive_sources(
     original_inactive_sources_ids = set()
     for item in original_report.items:
         for source in item.bank_income_sources:
-            if is_source_inactive(source, original_report.report_generation_time):
+            if is_source_inactive(source, original_report.generated_time):
                 original_inactive_sources_ids.add(source.income_source_id)
 
     # Find newly inactive sources in refreshed report
     newly_inactive_sources = []
     for item in refreshed_report.items:
         for source in item.bank_income_sources:
-            if is_source_inactive(source, refreshed_report.report_generation_time):
+            if is_source_inactive(source, refreshed_report.generated_time):
                 if source.income_source_id not in original_inactive_sources_ids:
                     newly_inactive_sources.append(source)
 
