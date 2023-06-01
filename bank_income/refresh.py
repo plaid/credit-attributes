@@ -60,18 +60,14 @@ def get_streams_with_new_transactions(
     original_income_source_end_dates = {}
     for item in original_report.items:
         for source in item.bank_income_sources:
-            end_date = datetime.datetime.strptime(source.end_date, "%Y-%m-%d").date()
-            original_income_source_end_dates[source.income_source_id] = end_date
+            original_income_source_end_dates[source.income_source_id] = source.end_date
 
     # Find income sources in refreshed report that have been updated with new transactions
     updated_income_sources = []
     for item in refreshed_report.items:
         for source in item.bank_income_sources:
             if source.income_source_id in original_income_source_end_dates:
-                end_date = datetime.datetime.strptime(
-                    source.end_date, "%Y-%m-%d"
-                ).date()
-                if end_date > original_income_source_end_dates[source.income_source_id]:
+                if  source.end_date > original_income_source_end_dates[source.income_source_id]:
                     updated_income_sources.append(source)
 
     return updated_income_sources
