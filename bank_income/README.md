@@ -13,3 +13,11 @@ These attributes can be found in monthly_average.py
 This attribute gives a prediction of the next pay date for a given income source.
 
 The attribute can be found in next_pay_date.py
+
+### Refresh Utils
+If using bank income refresh, these attributes will give you the ability to find significant changes that have occurred to the user's income in the most recent refresh. Specifically you will be able to find income sources that 
+1. Have been added since the last refresh
+2. Updated with new transactions since the last refresh
+3. Have become inactive since the last refresh
+
+These attributes can be found in refresh.py
