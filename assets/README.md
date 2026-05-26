@@ -296,19 +296,19 @@ This attribute can be calculated for a single account or across all the users ac
 This attribute details the average of a user’s daily ending balances
 
 This attribute can be calculated for a single account or across all the users depository accounts.
-* Account level attribute: account/negative_record.py
-* Report level attribute: report/negative_record.py
+* Account level attribute: account/historical_balances.py
+* Report level attribute: report/historical_balances.py
 
 ### Minimum Historical Balances
 This attribute details the minimum daily ending balance for a user
 
 This attribute can be calculated for a single account or across all the users depository accounts.
-* Account level attribute: account/negative_record.py
-* Report level attribute: report/negative_record.py
+* Account level attribute: account/historical_balances.py
+* Report level attribute: report/historical_balances.py
 
 ### Maximum Historical Balances
 This attribute details the maximum daily ending balance for a user
 
 This attribute can be calculated for a single account or across all the users depository accounts.
-* Account level attribute: account/negative_record.py
-* Report level attribute: report/negative_record.py
+* Account level attribute: account/historical_balances.py
+* Report level attribute: report/historical_balances.py

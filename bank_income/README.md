@@ -1,6 +1,6 @@
 # Bank Income Attributes
 
-The [Plaid Bank Income](https://plaid.com/products/income/) product helps verify a user's income using bank data, including income from payroll, government income, and other sources. This library details how to calculate key attributes from the Bank Income data that can be used in your verification flows. Each attribute has a corresponding function that you can use or adapt to further understand your user’s finances.
+The [Plaid Bank Income](https://plaid.com/docs/income/bank-income/) product helps verify a user's income using bank data, including income from payroll, government income, and other sources. This library details how to calculate key attributes from the Bank Income data that can be used in your verification flows. Each attribute has a corresponding function that you can use or adapt to further understand your user’s finances.
 
 Please reach out to your account manager if you have further questions on how to utilize the attributes.
 
