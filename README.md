@@ -7,7 +7,7 @@
 >
 > **For new underwriting integrations, start with the [Plaid Check Quickstart](https://github.com/plaid/credit-quickstart)** (Base Report, Income Insights, Network Insights, CashFlow Insights, LendScore, Home Lending).
 >
-> Use this library only if you are maintaining an existing Asset Report or Bank Income integration, or if you need a calculation Plaid Check does not expose directly (for example, loan-disbursement summaries or min/max balance).
+> Use this library only if you are maintaining an existing Asset Report or Bank Income integration. The functions here operate on Asset Report and Bank Income response objects and are not compatible with Plaid Check responses.
 
 Plaid provides a suite of credit products to help lenders gain a holistic view into a user’s finances. Today, these products are used by lenders in verticals across mortgage, personal, and business among others - see the [Credit Underwriting Whitepaper](https://plaid.com/credit-underwriting-whitepaper/) for more details on our product offerings and how Plaid’s Assets and Income improve automation and lending process for our customers today. 
 
