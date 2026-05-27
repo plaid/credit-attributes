@@ -1,5 +1,8 @@
 # Asset Report Attributes
 
+> [!IMPORTANT]
+> **Asset Report is a legacy credit product.** For most new integrations, see the [Plaid Check Quickstart](https://github.com/plaid/credit-quickstart). [Plaid Check Base Report](https://plaid.com/docs/api/products/check/) returns NSF/overdraft counts, inflow/outflow totals, and average balances — including 30/60/90-day windows — directly in the response. The scripts in this directory operate on Asset Report response objects only and cannot be used against Plaid Check responses.
+
 The [Plaid Asset Report](https://plaid.com/products/assets/) contains a holistic view into a user’s finances, including their transactions, balances, and historical cash flows in their financial accounts. Today, Assets is used by lenders in all verticals across mortgage, personal, and business among others - see the [Credit Underwriting Whitepaper](https://plaid.com/credit-underwriting-whitepaper/) for more details on our product offerings and how Plaid’s Assets and Income improve automation and lending process for our customers today. 
 
 In order to better aid the underwriting process utilizing alternative bank data, we have compiled these attributes on Github for developers and data scientists. This library details how to calculate key attributes from the report that can be used in your underwriting flows across negative records, debt insights, unusual account activity, cash flow and historical balances. Each attribute has a corresponding function that you can use or adapt to further understand your user’s finances. Please note in order to use these attributes, you will need credit categories enabled. 
