@@ -1,7 +1,7 @@
 # Bank Income Attributes
 
 > [!IMPORTANT]
-> **Bank Income is a legacy credit product.** For most new integrations, see the [Plaid Check Quickstart](https://github.com/plaid/credit-quickstart). [Plaid Check Income Insights](https://plaid.com/docs/api/products/check/) returns monthly income metrics and `next_payment_date` directly in the response, so you generally do not need the scripts in this directory to compute them.
+> **Bank Income is a legacy credit product.** For most new integrations, see the [Plaid Check Quickstart](https://github.com/plaid/credit-quickstart). [Plaid Check Income Insights](https://plaid.com/docs/api/products/check/) returns monthly income metrics and `next_payment_date` directly in the response. The scripts in this directory operate on Bank Income response objects only and cannot be used against Plaid Check responses.
 
 The [Plaid Bank Income](https://plaid.com/docs/income/bank-income/) product helps verify a user's income using bank data, including income from payroll, government income, and other sources. This library details how to calculate key attributes from the Bank Income data that can be used in your verification flows. Each attribute has a corresponding function that you can use or adapt to further understand your user’s finances.
 

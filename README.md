@@ -3,7 +3,7 @@
 > [!IMPORTANT]
 > **This library covers Plaid's legacy credit products — Asset Report and Bank Income.** For most new integrations, these have been superseded by [Plaid Check](https://plaid.com/check/underwriting/) (Plaid's Consumer Reporting Agency / CRA products).
 >
-> Plaid Check computes many of the attributes in this library directly in the API response, so you generally do not need to run these scripts to derive them. For example, [the Base Report](https://plaid.com/docs/api/products/check/) returns NSF/overdraft transaction counts (`nsf_overdraft_transactions_count`), total inflow/outflow amounts (`total_inflow_amount`, `total_outflow_amount`), and average balances (`average_balance`, `most_recent_thirty_day_average_balance`, `average_monthly_balances`) — with prebuilt 30/60/90-day rolling windows on the cash flow and overdraft fields. Income Insights returns monthly income metrics and `next_payment_date` directly.
+> Plaid Check computes many of the attributes in this library directly in the API response. For example, [the Base Report](https://plaid.com/docs/api/products/check/) returns NSF/overdraft transaction counts (`nsf_overdraft_transactions_count`), total inflow/outflow amounts (`total_inflow_amount`, `total_outflow_amount`), and average balances (`average_balance`, `most_recent_thirty_day_average_balance`, `average_monthly_balances`) — with prebuilt 30/60/90-day rolling windows on the cash flow and overdraft fields. Income Insights returns monthly income metrics and `next_payment_date` directly.
 >
 > **For new underwriting integrations, start with the [Plaid Check Quickstart](https://github.com/plaid/credit-quickstart)** (Base Report, Income Insights, Network Insights, CashFlow Insights, LendScore, Home Lending).
 >

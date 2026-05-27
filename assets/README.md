@@ -1,7 +1,7 @@
 # Asset Report Attributes
 
 > [!IMPORTANT]
-> **Asset Report is a legacy credit product.** For most new integrations, see the [Plaid Check Quickstart](https://github.com/plaid/credit-quickstart). [Plaid Check Base Report](https://plaid.com/docs/api/products/check/) returns NSF/overdraft counts, inflow/outflow totals, and average balances — including 30/60/90-day windows — directly in the response, so you generally do not need the scripts in this directory to compute them.
+> **Asset Report is a legacy credit product.** For most new integrations, see the [Plaid Check Quickstart](https://github.com/plaid/credit-quickstart). [Plaid Check Base Report](https://plaid.com/docs/api/products/check/) returns NSF/overdraft counts, inflow/outflow totals, and average balances — including 30/60/90-day windows — directly in the response. The scripts in this directory operate on Asset Report response objects only and cannot be used against Plaid Check responses.
 
 The [Plaid Asset Report](https://plaid.com/products/assets/) contains a holistic view into a user’s finances, including their transactions, balances, and historical cash flows in their financial accounts. Today, Assets is used by lenders in all verticals across mortgage, personal, and business among others - see the [Credit Underwriting Whitepaper](https://plaid.com/credit-underwriting-whitepaper/) for more details on our product offerings and how Plaid’s Assets and Income improve automation and lending process for our customers today. 
 
