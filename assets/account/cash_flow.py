@@ -56,7 +56,7 @@ def inflows_monthly_summary(account: AccountAssets) -> Dict[str, int]:
 """
 Count of outflows
 ----------------------
-num_outflows returns the number of inflow transactions for the user
+num_outflows returns the number of outflow transactions for the user
 for a given account
 """
 
@@ -104,7 +104,7 @@ def outflows_monthly_summary(account: AccountAssets) -> Dict[str, int]:
 """
 Number of Transactions
 ----------------------
-num_outflows returns the total number of transactions for the user
+num_transactions returns the total number of transactions for the user
 for a given account
 """
 

@@ -116,7 +116,7 @@ def max_od_nsf(asset_report: AssetReport) -> float:
 """
 Minimum Overdraft/NSF
 ----------------------
-min_od_nsf returns the maximum of overdraft or nsf transactions
+min_od_nsf returns the minimum of overdraft or nsf transactions
 across the users accounts
 """
 
