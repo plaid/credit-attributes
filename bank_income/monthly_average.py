@@ -29,7 +29,7 @@ net income for that user across their income sources
 Params
 * report: The Bank Income report to calculate monthly income for.
 * active_source_window: The time period, in days, that is used to determine whether an income source is active.
-    Only income sources that have recieved a transaction within this number of days will be included in the calculation.
+    Only income sources that have received a transaction within this number of days will be included in the calculation.
     Default, recommended value is 30 days.
 * avg_calculation_window: The time period, in days, over which to calculate the monthly average. We will average over
     a maximum of this many days. Default, recommended value is 90 days.
@@ -69,7 +69,7 @@ gross income for that user across their income sources
 Params
 * report: The Bank Income report to calculate monthly income for.
 * active_source_window: The time period, in days, that is used to determine whether an income source is active.
-    Only income sources that have recieved a transaction within this number of days will be included in the calculation.
+    Only income sources that have received a transaction within this number of days will be included in the calculation.
     Default, recommended value is 30 days.
 * avg_calculation_window: The time period, in days, over which to calculate the monthly average. We will average over
     a maximum of this many days. Default, recommended value is 90 days.

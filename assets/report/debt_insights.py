@@ -9,7 +9,7 @@ from utils import (
 )
 
 """
-Count of Loan Disburstments
+Count of Loan Disbursements
 ----------------------
 count_loan_disbursements returns the number of loan disbursement transactions
 across the users accounts
@@ -25,7 +25,7 @@ def count_loan_disbursements(asset_report: AssetReport) -> int:
 
 
 """
-Total amount of Loan Disburstments
+Total amount of Loan Disbursements
 ----------------------
 amount_loan_disbursements returns the total amount of loan disbursement transactions
 across the users accounts
@@ -40,7 +40,7 @@ def amount_loan_disbursements(asset_report: AssetReport) -> float:
 
 
 """
-Maximum Loan Disburstments
+Maximum Loan Disbursements
 ----------------------
 max_loan_disbursements returns the maximum of loan disbursement transactions
 across the users accounts
@@ -57,7 +57,7 @@ def max_loan_disbursements(asset_report: AssetReport) -> float:
 
 
 """
-Minimum Loan Disburstments
+Minimum Loan Disbursements
 ----------------------
 min_loan_disbursements returns the minimum of loan disbursement transactions
 across the users accounts
