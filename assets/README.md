@@ -19,9 +19,8 @@ Please reach out to your account manager if you have further questions on how to
     - [Average of OD/NSF events](#average-of-odnsf-events)
     - [Days Since most recent OD/NSF event](#days-since-most-recent-odnsf-event)
     - [Count of Negative Historical Balances](#count-of-negative-historical-balances)
-    - [Total amount of Negative Historical Balances](#total-amount-of-negative-historical-balances)
+    - [Lowest Negative Historical Balance](#lowest-negative-historical-balance)
     - [Average of Negative Historical Balances](#average-of-negative-historical-balances)
-    - [Days since most recent Negative Historical Balance](#days-since-most-recent-negative-historical-balance)
 2. [Debt Insights](#Debt-Insights)
     - [Count of Loan Disbursements](#count-of-loan-disbursements) / [Payments](#count-of-loan-payments)
     - [Total amount of Loan Disbursements](#total-amount-of-loan-disbursements) / [Payments](#total-amount-of-loan-payments)
@@ -99,8 +98,8 @@ This attribute can be calculated for a single account or across all the users de
 * Account level attribute: account/negative_record.py
 * Report level attribute: report/negative_record.py
 
-### Total amount of Negative Historical Balances
-This attribute details the total amount of negative daily ending balances the user has accrued.
+### Lowest Negative Historical Balance
+This attribute details the user's lowest negative daily ending balance (or 0.0 if the user has no negative balances).
 
 This attribute can be calculated for a single account or across all the users depository accounts.
 * Account level attribute: account/negative_record.py
@@ -108,13 +107,6 @@ This attribute can be calculated for a single account or across all the users de
 
 ### Average of Negative Historical Balances
 This attribute details the average of a user’s negative daily ending balances(if applicable).
-
-This attribute can be calculated for a single account or across all the users depository accounts.
-* Account level attribute: account/negative_record.py
-* Report level attribute: report/negative_record.py
-
-### Days since most recent Negative Historical Balance
-This attribute details the number of days since the most recent negative daily ending balance
 
 This attribute can be calculated for a single account or across all the users depository accounts.
 * Account level attribute: account/negative_record.py
